@@ -1,0 +1,184 @@
+/* Importa a fonte Orbitron do Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap");
+
+/*-------- Base --------*/
+body {
+  margin: 0;
+  font-family: "Rajdhani", "Segoe UI", sans-serif;
+  background: #0b0e19;
+  color: #e5e7f0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-app-region: drag;
+}
+
+button,
+select,
+.close-btn {
+  -webkit-app-region: no-drag;
+}
+
+.container {
+  text-align: center;
+  padding: 20px;
+  width: 100%;
+  max-width: 380px;
+}
+
+/*-------- Barra superior --------*/
+.titlebar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 32px;
+  width: 100%;
+  background: rgba(15, 18, 30, 0.85);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 5px;
+}
+
+.close-btn {
+  width: 35px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 18px;
+  color: #ff4b7a;
+  transition: 0.2s;
+}
+
+.close-btn:hover {
+  background: rgba(255, 75, 122, 0.15);
+}
+
+/*-------- Dark Mode --------*/
+.title {
+  font-family: "Orbitron", sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #00e5ff; /* ciano neon */
+  text-shadow: 0 0 1px #00e5ff, 0 0 2px #00e5ff; /* brilho reduzido */
+}
+
+.time-row {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  gap: 10px;
+  margin-top: 50px;
+}
+
+.time {
+  font-family: "Orbitron", sans-serif;
+  font-size: 80px;
+  font-weight: 700;
+  color: #00c8ff;
+  text-shadow: 0 0 1px #00c8ff, 0 0 3px #00c8ff; /* neon leve */
+}
+
+.ampm {
+  margin-top: 18px;
+  font-size: 26px;
+  color: #ff77ff;
+  text-shadow: 0 0 1px #ff77ff; /* brilho reduzido */
+}
+
+.date {
+  margin-top: 12px;
+  font-size: 22px;
+  color: #00ffd4;
+  text-shadow: 0 0 1px #00ffd4; /* brilho mínimo */
+}
+
+/*-------- Seleção --------*/
+.select-group {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+select {
+  padding: 10px;
+  border-radius: 10px;
+  background: #141a2b;
+  color: #eaeaea;
+  border: 1px solid #232a3a;
+  outline: none;
+  box-shadow: 0 0 2px rgba(0, 200, 255, 0.15);
+}
+
+/*-------- Botões --------*/
+button {
+  padding: 12px 18px;
+  margin: 10px;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  background: #191f31;
+  color: #e5e5e5;
+  font-weight: 600;
+  box-shadow: 0 0 2px rgba(0, 200, 255, 0.15);
+  transition: 0.2s;
+}
+
+button:hover {
+  background: #1f263a;
+  box-shadow: 0 0 4px rgba(0, 200, 255, 0.25);
+}
+
+/*-------- Light Mode --------*/
+body.light {
+  background: #e0e4eb; /* cinza suave */
+  color: #1c1f26; /* texto base */
+}
+
+/* Título e relógio com cor unificada e brilho reduzido */
+body.light .title,
+body.light .time {
+  color: #7a5fff; /* roxo neon suave */
+  text-shadow: 0 0 1px #7a5fff, 0 0 2px #7a5fff; /* brilho sutil */
+}
+
+body.light .ampm {
+  color: #c288ff; /* lilás claro */
+  text-shadow: 0 0 1px #c288ff;
+}
+
+body.light .date {
+  color: #b285ff; /* lilás suave */
+  text-shadow: 0 0 1px #b285ff;
+}
+
+body.light select,
+body.light button {
+  background: #f0f2f7; /* botão neutro */
+  color: #4b2fff; /* texto lilás escuro */
+  border: 1px solid #c3c6d1;
+  box-shadow: 0 0 2px rgba(123, 95, 255, 0.15);
+}
+
+body.light button:hover,
+body.light select:hover {
+  box-shadow: 0 0 4px rgba(123, 95, 255, 0.25);
+}
+
+body.light .titlebar {
+  background: rgba(224, 228, 235, 0.85);
+}
+
+body.light .close-btn {
+  color: #d6455f;
+}
+
+body.light .close-btn:hover {
+  background: rgba(214, 69, 95, 0.1);
+}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self' 'unsafe-inline'"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Relógio Internacional</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <!-- Barra superior -->
+    <div class="titlebar">
+      <div id="close-btn" class="close-btn">✕</div>
+    </div>
+
+    <div class="container">
+      <h1 class="title">Relógio Internacional</h1>
+
+      <div class="time-row">
+        <div id="time" class="time">00:00:00</div>
+        <div id="ampm" class="ampm"></div>
+      </div>
+
+      <div id="date" class="date">00/00/0000</div>
+
+      <div class="select-group">
+        <label for="timezone">País / Fuso horário:</label>
+        <select id="timezone">
+          <optgroup label="🌎 América do Sul">
+            <option value="America/Sao_Paulo">🇧🇷 Brasil — São Paulo</option>
+            <option value="America/Fortaleza">🇧🇷 Brasil — Fortaleza</option>
+            <option value="America/Rio_Branco">🇧🇷 Brasil — Acre</option>
+            <option value="America/Manaus">🇧🇷 Brasil — Amazonas</option>
+            <option value="America/Argentina/Buenos_Aires">
+              🇦🇷 Argentina — Buenos Aires
+            </option>
+            <option value="America/Santiago">🇨🇱 Chile — Santiago</option>
+            <option value="America/Montevideo">🇺🇾 Uruguai — Montevidéu</option>
+            <option value="America/Bogota">🇨🇴 Colômbia — Bogotá</option>
+            <option value="America/Lima">🇵🇪 Peru — Lima</option>
+          </optgroup>
+
+          <optgroup label="🌎 América do Norte">
+            <option value="America/New_York">🇺🇸 EUA — New York</option>
+            <option value="America/Chicago">🇺🇸 EUA — Chicago</option>
+            <option value="America/Denver">🇺🇸 EUA — Denver</option>
+            <option value="America/Los_Angeles">🇺🇸 EUA — Los Angeles</option>
+            <option value="America/Toronto">🇨🇦 Canadá — Toronto</option>
+            <option value="America/Vancouver">🇨🇦 Canadá — Vancouver</option>
+            <option value="America/Mexico_City">
+              🇲🇽 México — Cidade do México
+            </option>
+          </optgroup>
+
+          <optgroup label="🌍 Europa">
+            <option value="Europe/London">🇬🇧 Reino Unido — Londres</option>
+            <option value="Europe/Paris">🇫🇷 França — Paris</option>
+            <option value="Europe/Berlin">🇩🇪 Alemanha — Berlim</option>
+            <option value="Europe/Rome">🇮🇹 Itália — Roma</option>
+            <option value="Europe/Madrid">🇪🇸 Espanha — Madrid</option>
+            <option value="Europe/Amsterdam">🇳🇱 Holanda — Amsterdã</option>
+            <option value="Europe/Lisbon">🇵🇹 Portugal — Lisboa</option>
+            <option value="Europe/Moscow">🇷🇺 Rússia — Moscou</option>
+          </optgroup>
+
+          <optgroup label="🌏 Ásia">
+            <option value="Asia/Tokyo">🇯🇵 Japão — Tóquio</option>
+            <option value="Asia/Seoul">🇰🇷 Coreia do Sul — Seul</option>
+            <option value="Asia/Shanghai">🇨🇳 China — Xangai</option>
+            <option value="Asia/Hong_Kong">🇭🇰 Hong Kong</option>
+            <option value="Asia/Bangkok">🇹🇭 Tailândia — Bangkok</option>
+            <option value="Asia/Dubai">🇦🇪 Emirados Árabes — Dubai</option>
+            <option value="Asia/Kolkata">🇮🇳 Índia — Kolkata</option>
+          </optgroup>
+
+          <optgroup label="🌍 África">
+            <option value="Africa/Johannesburg">
+              🇿🇦 África do Sul — Joanesburgo
+            </option>
+            <option value="Africa/Cairo">🇪🇬 Egito — Cairo</option>
+            <option value="Africa/Nairobi">🇰🇪 Quênia — Nairobi</option>
+            <option value="Africa/Casablanca">🇲🇦 Marrocos — Casablanca</option>
+          </optgroup>
+
+          <optgroup label="🌏 Oceania">
+            <option value="Australia/Sydney">🇦🇺 Austrália — Sydney</option>
+            <option value="Australia/Melbourne">
+              🇦🇺 Austrália — Melbourne
+            </option>
+            <option value="Pacific/Auckland">
+              🇳🇿 Nova Zelândia — Auckland
+            </option>
+          </optgroup>
+        </select>
+      </div>
+
+      <div class="controls">
+        <button id="toggle-format">Formato: 24h</button>
+        <button id="toggle-theme">Tema: Dark</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
