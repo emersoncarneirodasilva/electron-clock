@@ -61,13 +61,17 @@ npm install -g electron-packager
 electron-packager . electron-clock --platform=win32 --arch=x64 --out=dist
 ```
 
-🖌️ Personalização
+---
+
+## 🖌️ Personalização
 
 Troque o fundo e cores neon no styles.css para combinar com seu estilo preferido
 
 Adapte fusos horários e cidades no index.html facilmente
 
-📦 Estrutura do projeto
+---
+
+## 📦 Estrutura do projeto
 
 ```bash
 electron-clock/
@@ -80,15 +84,21 @@ electron-clock/
 └─ dist/          # Pasta gerada ao empacotar o app
 ```
 
-👾 Telas do app
+---
+
+## 👾 Telas do app
 
 Insira prints do modo dark e light aqui para destacar o visual.
 
-⚖️ Licença
+---
+
+## ⚖️ Licença
 
 MIT License – use livremente, compartilhe e modifique
 
-🖼️ Imagens do App
+---
+
+## 🖼️ Imagens do App
 
 <img width="400" height="500" alt="Captura de tela 2025-12-10 235357" src="https://github.com/user-attachments/assets/872c1195-d96c-458e-a55f-902a4cea51c3" />
 <img width="400" height="500" alt="Captura de tela 2025-12-10 235420" src="https://github.com/user-attachments/assets/aeffa05d-d4e6-4a7b-9e73-b6cda0f70027" />
