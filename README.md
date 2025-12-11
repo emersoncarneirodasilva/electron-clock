@@ -100,6 +100,5 @@ MIT License – use livremente, compartilhe e modifique
 
 ## 🖼️ Imagens do App
 
-<img width="400" height="500" alt="Captura de tela 2025-12-10 235357" src="https://github.com/user-attachments/assets/872c1195-d96c-458e-a55f-902a4cea51c3" />
-<img width="400" height="500" alt="Captura de tela 2025-12-10 235420" src="https://github.com/user-attachments/assets/aeffa05d-d4e6-4a7b-9e73-b6cda0f70027" />
-
+<img width="400" height="500" alt="Captura de tela 2025-12-11 010051" src="https://github.com/user-attachments/assets/fea7368e-ad92-4429-b1e2-0e22edcb8965" />
+<img width="400" height="500" alt="Captura de tela 2025-12-11 010122" src="https://github.com/user-attachments/assets/7a58c8ca-410b-4fc6-bbc7-413f98cd78d0" />
